@@ -1,0 +1,15 @@
+{
+  "name": "iot-provisioning-service",
+  "version": "1.0.0",
+  "description": "Service which configures IOT devices with the files they need to work.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ntrek.eth",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
