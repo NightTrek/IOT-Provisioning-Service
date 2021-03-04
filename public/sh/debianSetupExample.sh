@@ -14,11 +14,11 @@ sudo apt update
 sudo apt upgrade
 sudo systemctl reboot
 sudo apt upgrade
-adduser agroiot  #password AgroAdmin321
-sudo usermod -aG sudo agroiot
-su agroiot
-sudo apt install openvpn
-wget https://myURLtoGetnewDeviceData/new/openvpn
+adduser agroedge  #password AgroAdmin321
+sudo usermod -aG sudo agroedge
+su agroedge
+sudo apt install openvpn easy-rsa
+wget https:/192.168.200.2/ovpn/defaultHost.ovpn
 sudo cp /home/vpn.ovpn /etc/openvpn/config.conf
 sudo systemctl status openvpn@config
 sudo systemctl enable openvpn@config
